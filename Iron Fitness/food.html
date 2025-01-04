@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link rel="icon" href="images/mainlogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Food</title>
+    <style>
+       
+    </style>
+</head>
+<body id="food" style="background-color: #aef5c15a;">
+    <div id="header">
+        <table>
+            <tr>
+                <td><a href="home.html"><img src="images/mainlogo.png" style="height:3em;width:3em;" alt="logo"  ></a></td>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="workout.html">Workout</a></td>
+                <td><a href="food.html">Food</a></td>
+                <td><a href="store.html">Store</a></td>
+                <td><a href="Makingof.html">Making of <b>Iron Fitness</b></a></td>
+                <td><a href="ourstory.html">Our Story</a></td>
+                <td id="user-info" style="color:cyan; font-weight:bold;"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    
+    <header id="food">
+        <h1>Eating Healthy Food Tips </h1>
+    </header>
+    <div id="foodcontainer">
+        <div>
+            <img id="foodpic" src="images/food.png" alt="Food Image" >
+            <h2>Why Eating Healthy Food is Important ?</h2>
+            <p style="font-size: 19px;"> A good diet will result in fat loss, energy gain, and a generally healthier lifestyle. Healthy eating isn't about strict limitations, but rather making smart food choices. A proper diet helps to reduce body fat,
+                maintain muscle mass, and avoid chronic diseases such as diabetes and heart problems.Overall if a person want to have a better life, then he or she have to chose better food options.</p>
+            </div>
+        <div id="foodtips">
+            <h2>Tips to Lose Fat and Stay Healthy</h2>
+            <ul>
+                <li>Focus on healthy foods like fruits, vegetables, lean proteins, whole grains, and healthy fats.</li>
+                <li>Drink alot of water to stay hydrated and healthy.</li>
+                <li>Eat smaller and more frequent meals to keep your metabolism active throughout the day.</li>
+                <li>Avoid sugary drinks and drink natural options like: herbal teas or fresh juices.</li>
+                <li>Exercise regularly to burn all calories and to build muscle.</li>
+                <li>Track your meals and calories to stay on top of your diet.</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Avoiding Unhealthy Foods</h2>
+            <p style="font-size: 19px;">To lose fat and maintain a healthy lifestyle, <span id="foodhighlight">avoid these unhealthy eating habits:</span></p>
+            <ul>
+                <li>Eating too much fast food, which is an option for unhealthy fats and calories.</li>
+                <li>Eating too much snacks like chips and cookies, which are containing alot of abnormal sugar.</li>
+                <li>Drinking sugary sodas and energy drinks that add empty calories to your diet.</li>
+                <li>Skipping meals, which can lead to overeating later in the day.</li>
+                <li>Late-night eating, especially heavy meals, which disrupts digestion and can lead to fat gain.</li>
+            </ul>
+        </div>
+        <img id="foodpic2" src="images/foodlast.png" alt="Food Image 2" >
+        <div>
+            
+            <h2>Key Advice</h2>
+            
+            <p>Focus on preparing your meals at home, so you can control the ingredients and portion sizes. Plan your meals for the week to avoid unhealthy choices. And remember, consistency is key. Making small, sustainable changes to your eating habits will result in long-term success.</p>
+        </div><br><br>
+    </div>
+    <script>
+        const userName = localStorage.getItem('userName');
+        const phone = localStorage.getItem('mobile');
+        const email = localStorage.getItem('email');
+
+
+                if (userName && phone && email) {
+                    document.getElementById('user-info').textContent = `Welcome, ${userName} \n Phone: ${phone} \n Email:  ${email}`;
+                }
+            </script>
+            
+</body>
+</html>

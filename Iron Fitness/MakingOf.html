@@ -1,0 +1,113 @@
+<html>
+<head>
+    <link rel="icon" href="images/mainlogo.png" type="image/png">
+    <title>Making of Iron Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<style>
+
+    
+</style>
+
+<body style="background-color: #aff5e457;">
+    <div id="header">
+        <table>
+            <tr>
+                <td><a href="home.html"><img src="images/mainlogo.png" style="height:3em;width:3em;" alt="logo"></a></td>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="workout.html">Workout</a></td>
+                <td><a href="food.html">Food</a></td>
+                <td><a href="store.html">Store</a></td>
+                <td><a href="makingof.html">Making of <b>Iron Fitness</b></a></td>
+                <td><a href="ourstory.html">Our Story</a></td>
+                <td id="user-info" style="color:cyan; font-weight:bold;"></td>
+            </tr>   
+        </table>
+    </div>
+
+    <header id="h1making">
+        <h1>Making of Iron Fitness</h1>
+    </header>
+
+    <div id="mockup-container">
+        <h1>Our Mockup Designs</h1>
+        
+        <div id="mockup-box">
+            <h2>Introduction</h2>
+            <p>Our Website Iron Fitness is desgined for the people who are intrested in the healthy life and workout in the gym. Our goal for this project is to desgin a user freindly website, which will be helpful for athletes to increase their physical fitness.     </p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Home Page Mockup</h2>
+            <img src="images/mockup1.png" alt="Mockup 1">
+            <p>The home page of Iron Fitness features a welcoming message, clear navigation, engaging content about healthy living, a user registration form, and greeting, all designed for easy interaction and a personalized experience.
+            </p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Workout Page Mockup</h2>
+            <img src="images/mockup2.png" alt="Mockup 2">
+            <p>The Workout page provides an overview of key muscle groups and exercises with embedded YouTube videos. It includes detailed descriptions of exercises like Incline Dumbbell Press, Deadlifts, Lunges, and more.
+            </p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Food Page Mockup</h2>
+            <img src="images/mockup3.png" alt="Mockup 3">
+            <p>The Food page offers tips on healthy eating, including food choices, hydration, and exercise. It emphasizes avoiding unhealthy foods, and provides advice on meal planning for long-term wellness.</p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Store Page Mockup</h2>
+            <img src="images/mockup4.png" alt="Mockup 3">
+            <p>The Store page displays fitness products like supplements and apparel. Users can add items to the cart, view a summary, and proceed to checkout. JavaScript manages cart actions.
+            </p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Justification of our design </h2>
+            <p>
+                <ul>
+                    <li>When we incorporate many color and specifically light colors to our web page, but in the Register or Home page we use dark color so it will be better and unique.</li><br>
+                    <li>We used many tables like the table in the Workout page, so there will be many rows and specify the row with different information. </li><br>
+                    <li>We used dark colors for some heading to be clear, and pages background we used light colors for better readability and easy on the user's eyes. </li><br>
+                    <li>On the top right, we made the user name in cyan color to be clear to the user and also give a calm feel to the site.</li>
+                </ul>
+                
+            </p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Justification of our code </h2>
+            <p> <ul>
+                <li><strong>HTML:</strong> We increase the user readability and to keep a good design, so we used the tags like head, nav and footer respectively.</li><br>
+                <li><strong>CSS:</strong> We used guarantees a beautiful styling; and further refinements are very easy to implement.</li><br>
+                <li><strong>JavaScript:</strong> Incorporation of new elements, new objects and new functions was useful to untangle and make the task for the user, easier when browsing this website.</li>
+            </ul>
+            </p>
+        </div>
+
+        <div id="mockup-box">
+            <h2>Conclusion </h2>
+            <p>
+                For effective site maintenance, we chose to put all CSS design files in a separate file. We also added a separate page for JavaScript and a separate file for images, which makes it easy to maintain the site in the future.
+                For ease of navigation, we have also added a web navigation bar which makes it easier for the user to navigate through the website pages.
+            </p>
+        </div>
+        
+    </div>
+
+    <script>
+        const userName = localStorage.getItem('userName');
+        const phone = localStorage.getItem('mobile');
+        const email = localStorage.getItem('email');
+
+
+                if (userName && phone && email) {
+                    document.getElementById('user-info').textContent = `Welcome, ${userName} \n Phone: ${phone} \n Email:  ${email}`;
+                }
+            </script>
+</body>
+</html>

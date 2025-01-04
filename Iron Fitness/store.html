@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/mainlogo.png" type="image/png">
+    <title>Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body id="storebody">
+
+    <div id="header">
+        <table>
+            <tr>
+                <td><a href="home.html"><img src="images/mainlogo.png" style="height:3em;width:3em;" alt="logo"></a></td>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="workout.html">Workout</a></td>
+                <td><a href="food.html">Food</a></td>
+                <td><a href="store.html">Store</a></td>
+                <td><a href="makingof.html">Making of <b>Iron Fitness</b></a></td>
+                <td><a href="ourstory.html">Our Story</a></td>
+                <td id="user-info" style="color:cyan; font-weight:bold;"></td>
+            </tr>
+        </table>
+    </div>
+
+    <h1 id="storeh1">Iron Fitness Store <img src="images/mainlogo.png" alt="mainlogo" style="height:1em;width:1em;"> </h1>
+    <p id="Pstore">At Iron Fitness Store, we offer a curated selection of high-quality supplements and gym apparel designed to help you achieve your fitness goals. Whether you're looking to build muscle, improve endurance, or maintain overall health, our products are tailored to meet the needs of athletes and fitness enthusiasts of all levels.</p>
+
+    <div id="container">
+        <div id="product">
+            <img src="images/Protein.webp" alt="Protein">
+            <h3>Whey Protein</h3>
+            <p>High-quality whey protein to support muscle growth and recovery.</p>
+            <p><strong>Benefits:</strong> Improves muscle repair, boosts strength, and enhances workout performance.</p>
+            <p id="price">Price: 20 BHD</p>
+            <button onclick="addToCart('Whey Protein', 20)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/Creatine.webp" alt="Creatine">
+            <h3>Creatine</h3>
+            <p>A premium supplement to boost strength and power during workouts.</p>
+            <p><strong>Benefits:</strong> Increases muscle mass, improves performance, and enhances energy levels.</p>
+            <p id="price">Price: 15 BHD</p>
+            <button onclick="addToCart('Creatine', 15)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/multivitamins.webp" alt="Multivitamins">
+            <h3>Multivitamins</h3>
+            <p>Comprehensive daily vitamins to support your overall health and wellness.</p>
+            <p><strong>Benefits:</strong> Boosts immunity, improves energy levels, fills nutrient gaps, and immune system support.</p>
+            <p id="price">Price: 8 BHD</p>
+            <button onclick="addToCart('Multivitamins', 8)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/omega3.webp" alt="Omega 3">
+            <h3>Omega 3</h3>
+            <p>Essential fatty acids to support heart, brain, and joint health.</p>
+            <p><strong>Benefits:</strong> Reduces inflammation, improves cardiovascular health, and enhances brain function.</p>
+            <p id="price">Price: 10 BHD</p>
+            <button onclick="addToCart('Omega 3', 10)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/hat.webp" alt="Hat">
+            <h3>Iron Fitness Hat</h3>
+            <p>Comfortable and stylish gym wear to enhance your workouts.</p>
+            <p><strong>Benefits:</strong> Lightweight, durable, and designed for peak performance.</p>
+            <p id="price">Price: 15 BHD</p>
+            <button onclick="addToCart('Iron Fitness Hat', 15)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/clothes.webp" alt="Clothes">
+            <h3>Iron Fitness Clothes</h3>
+            <p>Comfortable and stylish gym wear to enhance your workouts.</p>
+            <p><strong>Benefits:</strong> Lightweight, durable, and designed for peak performance.</p>
+            <p id="price">Price: 25 BHD</p>
+            <button onclick="addToCart('Iron Fitness Clothes', 25)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/shoes.webp" alt="Shoes">
+            <h3>Iron Fitness Shoes</h3>
+            <p>Comfortable and stylish gym wear to enhance your workouts.</p>
+            <p><strong>Benefits:</strong> Lightweight, durable, and designed for peak performance.</p>
+            <p id="price">Price: 30 BHD</p>
+            <button onclick="addToCart('Iron Fitness Shoes', 30)">Add to Cart</button>
+        </div>
+
+        <div id="product">
+            <img src="images/accessories.webp" alt="Accessories">
+            <h3>Iron Fitness Accessories</h3>
+            <p>Comfortable and stylish gym wear to enhance your workouts.</p>
+            <p><strong>Benefits:</strong> Lightweight, durable, and designed for peak performance.</p>
+            <p id="price">Price: 18 BHD</p>
+            <button onclick="addToCart('Iron Fitness Accessories', 18)">Add to Cart</button>
+        </div>
+    </div>
+
+    <button id="checkoutButton" onclick="viewCart()">Checkout</button>
+
+<div id="cartSummary">
+    <h3>Cart Summary</h3>
+    <ul id="cartItemsList"></ul>
+    <p><strong>Total Price: </strong><span id="totalPrice">0</span> BHD</p>
+    <div class="button-container">
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="clearCart()">Pay</button> 
+    </div>
+</div>
+
+    
+<script>
+    const userName = localStorage.getItem('userName');
+    const phone = localStorage.getItem('mobile');
+    const email = localStorage.getItem('email');
+
+
+            if (userName && phone && email) {
+                document.getElementById('user-info').textContent = `Welcome, ${userName} \n Phone: ${phone} \n Email:  ${email}`;
+            }
+        </script>
+</body>
+</html>

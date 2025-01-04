@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link rel="icon" href="images/mainlogo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Workout</title>
+</head>
+<body style="background-color: #c1e2ed9b;">
+
+    <div id="header">
+        <table>
+            <tr>
+                <td><a href="home.html"><img src="images/mainlogo.png" style="height:3em;width:3em;" alt="logo"></a></td>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="workout.html">Workout</a></td>
+                <td><a href="food.html">Food</a></td>
+                <td><a href="store.html">Store</a></td>
+                <td><a href="Makingof.html">Making of <b>Iron Fitness</b></a></td>
+                <td><a href="ourstory.html">Our Story</a></td>
+                <td id="user-info" style="color:cyan; font-weight:bold;"></td>
+            </tr>
+        </table>
+    </div>
+
+    <h1 id="h1work">Muscle Groups and Exercises</h1>
+    <div class="container2">
+        <table id="tb2">
+            <thead>
+                <tr>
+                    <th>Muscle Group</th>
+                    <th>Description</th>
+                    <th>Example of the Exercise</th>
+                    <th>Videos</th>
+                </tr>
+            </thead>
+            <tbody id="boldandunder" style="background-color: white;">
+                <tr>
+                    <td>Chest</td>
+                    <td><b>Focuses on the upper chest and shoulders by pressing <br>dumbbells upward on an incline bench, helping build a fuller chest.</b></td>
+                    <td>Incline Dumbbell Press</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/dPb9JxFMuuE?si=FUZj3Rd9rePPpLhj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Back</td>
+                    <td>A powerful full-body exercise that strengthens the back, glutes,<br> and hamstrings while improving overall strength and posture.</td>
+                    <td>Deadlifts</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/YvKOvyiAdAI?si=uv9aajtSG1zdRtUX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Legs</td>
+                    <td>Targets the legs and glutes by stepping forward and lowering the body,<br> great for building balance and lower-body strength.</td>
+                    <td>Lunges</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/sDMAPXzvjAo?si=RRoZZOn8iwaXJKOu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Shoulders</td>
+                    <td>Shapes the shoulders by lifting dumbbells to the side,<br> emphasizing the lateral deltoid muscles for wider shoulders.</td>
+                    <td>Lateral Raises</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/zGZVv5zqCFE?si=DGRPBwRZ1uiuGuAr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Biceps</td>
+                    <td>Builds arm thickness by curling dumbbells with a neutral grip,<br> focusing on the brachialis muscle.</td>
+                    <td>Hammer Curls</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/gozU3CUIizs?si=nyBnQumPoa--YBcv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Triceps</td>
+                    <td>Strengthens the triceps by lowering a barbell or dumbbells,<br> ideal for toning the back of the arms.</td>
+                    <td>Skull Crushers</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/tMyFe-IL7Ks?si=kcCcQRh8YtpxWTMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td>Abs</td>
+                    <td>Enhances core strength and stability by twisting the torso<br> side-to-side while holding a weight or medicine ball.</td>
+                    <td>Russian Twists</td>
+                    <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Wv5NcMH9GSY?si=T0B9GOb8SS-n9NiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+
+    <script>
+        const userName = localStorage.getItem('userName');
+        const phone = localStorage.getItem('mobile');
+        const email = localStorage.getItem('email');
+
+
+                if (userName && phone && email) {
+                    document.getElementById('user-info').textContent = `Welcome, ${userName} \n Phone: ${phone} \n Email:  ${email}`;
+                }
+            </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+    <link rel="icon" href="images/mainlogo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <table>
+            <tr>
+                <td><a href="home.html"><img src="images/mainlogo.png" style="height:3em;width:3em;" alt="logo"></a></td>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="workout.html">Workout</a></td>
+                <td><a href="food.html">Food</a></td>
+                <td><a href="store.html">Store</a></td>
+                <td><a href="makingof.html">Making of <b>Iron Fitness</b></a></td>
+                <td><a href="ourstory.html">Our Story</a></td>
+                <td id="user-info" style="color:cyan; font-weight:bold;"></td>
+            </tr>   
+        </table>
+    </div>
+    <div id="first">
+        <h1 id="headerWelc">Welcome to Iron Fitness</h1>
+        
+        <p style="font-size: 20px;padding-right: 20px;padding-left: 20px;">
+            Living a healthy and fit lifestyle means prioritizing both physical and mental well-being through regular exercise, balanced nutrition, 
+            and positive daily habits. It’s about feeling energized, building strength, and improving your quality of life. By staying active and eating nutrient-rich meals,
+            you can reduce the risk of chronic illnesses, boost mental clarity, and maintain emotional balance. A healthy lifestyle is not just about appearance but about cultivating long-term vitality and resilience.
+        </p>
+        <img src="images/logo.webp" alt="Iron Fitness Logo" id="logo" alt="Iron Fitness Logo">
+        <form id="registrationForm">
+            <h2 id="headerWelch2">Register Your Details</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="8" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   <script>
+        const userName = localStorage.getItem('userName');
+        const phone = localStorage.getItem('mobile');
+        const email = localStorage.getItem('email');
+
+
+                if (userName && phone && email) {
+                    document.getElementById('user-info').textContent = `Welcome, ${userName} \n Phone: ${phone} \n Email:  ${email}`;
+                }
+            </script>
+</body>
+</html>
